@@ -77,14 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Agentverse — Autonomous Commerce & Longevity Finance" },
+      {
+        name: "description",
+        content:
+          "Agentverse pairs autonomous AI commerce agents with a longevity finance layer for biotech research and health data.",
+      },
+      { name: "author", content: "Agentverse" },
+      { property: "og:title", content: "Agentverse — Autonomous Commerce & Longevity Finance" },
+      {
+        property: "og:description",
+        content:
+          "Agents that trade for you. Capital that funds longer lives. Two engines, one operating system.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
