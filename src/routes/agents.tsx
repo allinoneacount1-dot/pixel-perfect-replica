@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/site-header";
+import agentsSchematic from "@/assets/agents-schematic.jpg";
 
 export const Route = createFileRoute("/agents")({
   head: () => ({
@@ -71,6 +72,21 @@ function AgentsPage() {
               </div>
             ))}
           </div>
+
+          <figure className="mt-16 border border-border bg-card">
+            <img
+              src={agentsSchematic}
+              alt="Isometric schematic of an agent cluster with signed transaction ledger."
+              width={1600}
+              height={1200}
+              loading="lazy"
+              className="block w-full"
+            />
+            <figcaption className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+              <span>fig.02 · agent network / cluster.7</span>
+              <span className="text-commerce">schema ancl.7.3</span>
+            </figcaption>
+          </figure>
 
           <div className="mt-16 flex flex-wrap gap-3">
             <Link
