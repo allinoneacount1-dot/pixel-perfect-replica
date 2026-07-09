@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/site-header";
-import agentsSchematic from "@/assets/agents-schematic.jpg";
+import { BlueprintFigure } from "@/components/site/blueprint-figure";
+import agentsSchematic from "@/assets/agents-schematic.webp";
+import settlementRails from "@/assets/settlement-rails.webp";
 
 export const Route = createFileRoute("/agents")({
   head: () => ({
@@ -73,20 +75,28 @@ function AgentsPage() {
             ))}
           </div>
 
-          <figure className="mt-16 border border-border bg-card">
-            <img
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:mt-16 lg:grid-cols-2">
+            <BlueprintFigure
               src={agentsSchematic}
-              alt="Isometric schematic of an agent cluster with signed transaction ledger."
               width={1600}
               height={1200}
-              loading="lazy"
-              className="block w-full"
+              figNumber="fig.02"
+              title="agent network · cluster.7"
+              meta="schema ancl.7.3"
+              accent="commerce"
+              alt="Isometric technical schematic titled Agent Network Cluster 7. Five hexagonal agent nodes (Orchestrator, Analyzer, Executor, Risk, Settler) sit on a grid connected by lime data pathways carrying labelled transactions such as MANDATE POLICY.UPDATE and SETTLE STATE.COMMIT. A distributed-ledger stack anchors the base; side panels list the transaction ledger, legend, mandate types, and node specifications."
             />
-            <figcaption className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-              <span>fig.02 · agent network / cluster.7</span>
-              <span className="text-commerce">schema ancl.7.3</span>
-            </figcaption>
-          </figure>
+            <BlueprintFigure
+              src={settlementRails}
+              width={1600}
+              height={1200}
+              figNumber="fig.05"
+              title="settlement rails routing"
+              meta="plate srp-3r-001"
+              accent="commerce"
+              alt="Settlement-rails routing plate. A single origin agent on the left branches into three parallel horizontal rails — USDC on Solana, ETH on Ethereum L1 (highlighted lime as the active rail), and Fiat Wire — feeding a signed receipt block on the right with amount, status, and signature. Bottom tables list rail performance latencies, capacity limits, and system metrics."
+            />
+          </div>
 
           <div className="mt-16 flex flex-wrap gap-3">
             <Link

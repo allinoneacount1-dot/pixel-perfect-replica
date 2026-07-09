@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/site-header";
-import biofiAnatomy from "@/assets/biofi-anatomy.jpg";
+import { BlueprintFigure } from "@/components/site/blueprint-figure";
+import biofiAnatomy from "@/assets/biofi-anatomy.webp";
+import cohortDao from "@/assets/cohort-dao.webp";
 
 export const Route = createFileRoute("/biofi")({
   head: () => ({
@@ -73,20 +75,28 @@ function BioFiPage() {
             ))}
           </div>
 
-          <figure className="mt-16 border border-border bg-card">
-            <img
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:mt-16 lg:grid-cols-2">
+            <BlueprintFigure
               src={biofiAnatomy}
-              alt="Anatomical diagram of longevity biotech capital flow: an allocation heart branching into trial vaults."
               width={1600}
               height={1200}
-              loading="lazy"
-              className="block w-full"
+              figNumber="fig.03"
+              title="longevity biotech capital flow"
+              meta="diagram lbcf-7a"
+              accent="biofi"
+              alt="Anatomical plate titled Longevity Biotech Capital Flow. An amber circulatory-style heart on the left branches through arterial vessels into three vault chambers on the right — Trial-042, Cohort.Rapa, and Vault.Retrobio — each rendered as a labeled scientific cutaway. Side annotations describe arterial deployment, program vaults, and venous return of returns plus data."
             />
-            <figcaption className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-              <span>fig.03 · longevity biotech capital flow</span>
-              <span className="text-biofi">diagram lbcf-7a</span>
-            </figcaption>
-          </figure>
+            <BlueprintFigure
+              src={cohortDao}
+              width={1600}
+              height={1200}
+              figNumber="fig.06"
+              title="cohort dao governance"
+              meta="plate dao-23a"
+              accent="biofi"
+              alt="Top-down orthographic diagram of a cohort DAO. A ring of 1,244 small human silhouettes surrounds a central hexagonal treasury vault, with amber quadratic-weight bars radiating outward toward three active proposal cards (Core Dev Funding, Research Grants Pool, DAO Tooling Upgrade) on the right, each showing total weight, quorum, and support percentage."
+            />
+          </div>
 
           <div className="mt-16 flex flex-wrap gap-3">
             <Link

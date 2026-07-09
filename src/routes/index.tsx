@@ -1,7 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/site-header";
-import heroSpread from "@/assets/hero-spread.jpg";
+import { BlueprintFigure } from "@/components/site/blueprint-figure";
+import heroSpread from "@/assets/hero-spread.webp";
+import policyEngine from "@/assets/policy-engine.webp";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -91,23 +93,16 @@ function Index() {
       {/* MODULES */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-6 py-24">
-          <figure className="mb-16 border border-border bg-card">
-            <img
-              src={heroSpread}
-              alt="Agentverse system spread — agent mesh on the left, anatomical capital vault system on the right, joined at the OS.0.1 seam."
-              width={1920}
-              height={1088}
-              loading="lazy"
-              className="block w-full"
-            />
-            <figcaption className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-              <span>fig.01 · agentverse system spread</span>
-              <span>
-                <span className="text-commerce">mesh</span> · seam ·{" "}
-                <span className="text-biofi">vaults</span>
-              </span>
-            </figcaption>
-          </figure>
+          <BlueprintFigure
+            className="mb-12 sm:mb-16"
+            src={heroSpread}
+            width={1920}
+            height={1088}
+            figNumber="fig.01"
+            title="agentverse system spread"
+            meta="mesh · seam · vaults"
+            alt="Two-page technical spread. Left half: a lime-green agent mesh of hexagonal nodes labelled A17B, B44D, F29C connected by transaction traces, with an agent-protocol legend and mesh-health status block. Right half: an amber anatomical heart branching into five rectangular capital chambers (Alpha through Omega) with balances, asset mix, and risk tiers. A central seam labelled AGENTVERSE / OS.0.1."
+          />
           <div className="mb-12 flex items-end justify-between gap-6">
             <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
               Two modules. Same substrate.
@@ -145,6 +140,18 @@ function Index() {
               cta={{ to: "/biofi", label: "open biofi →" }}
             />
           </div>
+
+          <BlueprintFigure
+            className="mt-12 sm:mt-16"
+            src={policyEngine}
+            width={1600}
+            height={1200}
+            figNumber="fig.04"
+            title="shared substrate · policy engine"
+            meta="diagram pe-3l-001"
+            accent="commerce"
+            alt="Layered policy-engine plate with three stacked bands — Mandate at the top, Guardrails in the middle, Settlement at the bottom — connected by lime approval arrows. Side legends list intent, constraints, and attestation checks; a revision block and reference-code table anchor the plate."
+          />
         </div>
       </section>
 
