@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/site-header";
+import biofiAnatomy from "@/assets/biofi-anatomy.jpg";
 
 export const Route = createFileRoute("/biofi")({
   head: () => ({
@@ -71,6 +72,21 @@ function BioFiPage() {
               </div>
             ))}
           </div>
+
+          <figure className="mt-16 border border-border bg-card">
+            <img
+              src={biofiAnatomy}
+              alt="Anatomical diagram of longevity biotech capital flow: an allocation heart branching into trial vaults."
+              width={1600}
+              height={1200}
+              loading="lazy"
+              className="block w-full"
+            />
+            <figcaption className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+              <span>fig.03 · longevity biotech capital flow</span>
+              <span className="text-biofi">diagram lbcf-7a</span>
+            </figcaption>
+          </figure>
 
           <div className="mt-16 flex flex-wrap gap-3">
             <Link

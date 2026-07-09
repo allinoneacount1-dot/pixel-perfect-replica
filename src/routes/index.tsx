@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/site-header";
+import heroSpread from "@/assets/hero-spread.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -90,6 +91,23 @@ function Index() {
       {/* MODULES */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-6 py-24">
+          <figure className="mb-16 border border-border bg-card">
+            <img
+              src={heroSpread}
+              alt="Agentverse system spread — agent mesh on the left, anatomical capital vault system on the right, joined at the OS.0.1 seam."
+              width={1920}
+              height={1088}
+              loading="lazy"
+              className="block w-full"
+            />
+            <figcaption className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+              <span>fig.01 · agentverse system spread</span>
+              <span>
+                <span className="text-commerce">mesh</span> · seam ·{" "}
+                <span className="text-biofi">vaults</span>
+              </span>
+            </figcaption>
+          </figure>
           <div className="mb-12 flex items-end justify-between gap-6">
             <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
               Two modules. Same substrate.
