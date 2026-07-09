@@ -89,6 +89,28 @@ function BioFiPage() {
               <span className="text-biofi">diagram lbcf-7a</span>
             </figcaption>
           </figure>
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:mt-16 lg:grid-cols-2">
+            <BlueprintFigure
+              src={biofiAnatomy}
+              width={1600}
+              height={1200}
+              figNumber="fig.03"
+              title="longevity biotech capital flow"
+              meta="diagram lbcf-7a"
+              accent="biofi"
+              alt="Anatomical plate titled Longevity Biotech Capital Flow. An amber circulatory-style heart on the left branches through arterial vessels into three vault chambers on the right — Trial-042, Cohort.Rapa, and Vault.Retrobio — each rendered as a labeled scientific cutaway. Side annotations describe arterial deployment, program vaults, and venous return of returns plus data."
+            />
+            <BlueprintFigure
+              src={cohortDao}
+              width={1600}
+              height={1200}
+              figNumber="fig.06"
+              title="cohort dao governance"
+              meta="plate dao-23a"
+              accent="biofi"
+              alt="Top-down orthographic diagram of a cohort DAO. A ring of 1,244 small human silhouettes surrounds a central hexagonal treasury vault, with amber quadratic-weight bars radiating outward toward three active proposal cards (Core Dev Funding, Research Grants Pool, DAO Tooling Upgrade) on the right, each showing total weight, quorum, and support percentage."
+            />
+          </div>
 
           <div className="mt-16 flex flex-wrap gap-3">
             <Link
