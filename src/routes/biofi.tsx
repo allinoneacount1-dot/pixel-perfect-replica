@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/site-header";
-import biofiAnatomy from "@/assets/biofi-anatomy.jpg";
+import { BlueprintFigure } from "@/components/site/blueprint-figure";
+import biofiAnatomy from "@/assets/biofi-anatomy.webp";
+import cohortDao from "@/assets/cohort-dao.webp";
 
 export const Route = createFileRoute("/biofi")({
   head: () => ({

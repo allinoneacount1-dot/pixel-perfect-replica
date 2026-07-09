@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/site-header";
-import agentsSchematic from "@/assets/agents-schematic.jpg";
+import { BlueprintFigure } from "@/components/site/blueprint-figure";
+import agentsSchematic from "@/assets/agents-schematic.webp";
+import settlementRails from "@/assets/settlement-rails.webp";
 
 export const Route = createFileRoute("/agents")({
   head: () => ({
