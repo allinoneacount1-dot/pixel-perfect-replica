@@ -101,6 +101,7 @@ function Index() {
             figNumber="fig.01"
             title="agentverse system spread"
             meta="mesh · seam · vaults"
+            eager
             alt="Two-page technical spread. Left half: a lime-green agent mesh of hexagonal nodes labelled A17B, B44D, F29C connected by transaction traces, with an agent-protocol legend and mesh-health status block. Right half: an amber anatomical heart branching into five rectangular capital chambers (Alpha through Omega) with balances, asset mix, and risk tiers. A central seam labelled AGENTVERSE / OS.0.1."
           />
           <div className="mb-12 flex items-end justify-between gap-6">

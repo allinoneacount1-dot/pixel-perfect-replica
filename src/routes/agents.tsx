@@ -84,6 +84,7 @@ function AgentsPage() {
               title="agent network · cluster.7"
               meta="schema ancl.7.3"
               accent="commerce"
+              eager
               alt="Isometric technical schematic titled Agent Network Cluster 7. Five hexagonal agent nodes (Orchestrator, Analyzer, Executor, Risk, Settler) sit on a grid connected by lime data pathways carrying labelled transactions such as MANDATE POLICY.UPDATE and SETTLE STATE.COMMIT. A distributed-ledger stack anchors the base; side panels list the transaction ledger, legend, mandate types, and node specifications."
             />
             <BlueprintFigure
@@ -94,7 +95,7 @@ function AgentsPage() {
               title="settlement rails routing"
               meta="plate srp-3r-001"
               accent="commerce"
-              alt="Settlement-rails routing plate. A single origin agent on the left branches into three parallel horizontal rails — USDC on Solana, ETH on Ethereum L1 (highlighted lime as the active rail), and Fiat Wire — feeding a signed receipt block on the right with amount, status, and signature. Bottom tables list rail performance latencies, capacity limits, and system metrics."
+              alt="Settlement-rails routing plate. A single origin agent on the left branches into three parallel horizontal rails — USDC on Solana, SOL on Solana L1 (highlighted lime as the active rail), and Fiat Wire — feeding a signed receipt block on the right with amount, status, and signature. Bottom tables list rail performance latencies, capacity limits, and system metrics."
             />
           </div>
 

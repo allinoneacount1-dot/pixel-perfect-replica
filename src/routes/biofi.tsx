@@ -84,6 +84,7 @@ function BioFiPage() {
               title="longevity biotech capital flow"
               meta="diagram lbcf-7a"
               accent="biofi"
+              eager
               alt="Anatomical plate titled Longevity Biotech Capital Flow. An amber circulatory-style heart on the left branches through arterial vessels into three vault chambers on the right — Trial-042, Cohort.Rapa, and Vault.Retrobio — each rendered as a labeled scientific cutaway. Side annotations describe arterial deployment, program vaults, and venous return of returns plus data."
             />
             <BlueprintFigure
