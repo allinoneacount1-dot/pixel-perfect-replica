@@ -62,7 +62,7 @@ function Index() {
               <ul className="space-y-2">
                 <li className="flex justify-between">
                   <span className="text-muted-foreground">agent.0x7a…</span>
-                  <span className="text-commerce">-0.42 ETH · buy(gpu.h100×2)</span>
+                  <span className="text-commerce">-0.42 SOL · buy(gpu.h100×2)</span>
                 </li>
                 <li className="flex justify-between">
                   <span className="text-muted-foreground">agent.0xf1…</span>

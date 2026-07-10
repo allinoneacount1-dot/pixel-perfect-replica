@@ -57,7 +57,7 @@ function AgentsPage() {
               {
                 k: "03 · settle",
                 t: "Native rails",
-                d: "USDC, ETH, or fiat via provider. Every action produces a signed receipt.",
+                d: "USDC, SOL, or fiat via provider. Every action produces a signed receipt.",
               },
             ].map((c) => (
               <div
