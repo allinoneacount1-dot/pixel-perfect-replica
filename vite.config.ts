@@ -39,7 +39,7 @@ export default defineConfig(async (env) => {
   }
 
   const loadedEnv = loadEnv(mode, process.cwd(), "VITE_");
-  const envDefine = {};
+  const envDefine: Record<string, string> = {};
   for (const [key, value] of Object.entries(loadedEnv)) {
     envDefine[`import.meta.env.${key}`] = JSON.stringify(value);
   }
